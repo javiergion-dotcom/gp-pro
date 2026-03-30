@@ -1,1 +1,1 @@
-# jgp-pro
+# gp-pro
