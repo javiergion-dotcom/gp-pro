@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,31 +11,56 @@ body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 background:#E7E3DC;
+color:#1C1C1C;
 }
+
+/* HEADER */
 
 header{
 background:#B79C8C;
 color:white;
-padding:25px;
+padding:30px;
 text-align:center;
-font-size:22px;
+font-size:26px;
 font-weight:bold;
 }
 
+/* PANEL */
+
 .panel{
-padding:20px;
+padding:25px;
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
 }
+
+/* BOTONES */
 
 .boton{
 background:#C9C1B3;
-padding:25px;
-border-radius:14px;
+border-radius:18px;
+padding:30px;
 text-align:center;
+font-size:20px;
 font-weight:bold;
-font-size:16px;
+box-shadow:0 6px 12px rgba(0,0,0,0.15);
+transition:all 0.15s ease;
+}
+
+.boton:active{
+transform:scale(0.96);
+}
+
+/* ESPECIALES */
+
+.incidencias{
+background:#8B1E1E;
+color:white;
+}
+
+.comunicaciones{
+background:#D4A017;
+color:black;
 }
 </style>
 
@@ -45,12 +71,28 @@ font-size:16px;
 <header>GP PRO</header>
 
 <div class="panel">
-<div class="boton">Ventas</div>
-<div class="boton">Diario</div>
+
 <div class="boton">Pedidos</div>
 <div class="boton">Proveedores</div>
+
 <div class="boton">Artículos</div>
+<div class="boton">Comparador</div>
+
+<div class="boton incidencias">Incidencias</div>
+<div class="boton comunicaciones">Comunicaciones</div>
+
+<div class="boton">Ventas</div>
+<div class="boton">Histórico pedidos</div>
+
+<div class="boton">Diario</div>
+<div class="boton">Pagos</div>
+
+<div class="boton">Calendario</div>
 <div class="boton">Configuración</div>
+
+<div class="boton">Recordatorios</div>
+<div class="boton">Ayuda</div>
+
 </div>
 
 </body>
