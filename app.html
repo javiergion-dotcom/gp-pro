@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GP PRO</title>
+
 <style>
 body{
 margin:0;
@@ -5,34 +12,74 @@ font-family:Arial, sans-serif;
 background:#EDE9E3;
 }
 
+/* HEADER */
+
 header{
-background:#5a3825;
+background:#3e2a1f;
 color:white;
-padding:25px;
-text-align:center;
-font-size:22px;
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-weight:bold;
 }
+
+.header-izq{
+font-size:18px;
+}
+
+.header-der{
+font-size:13px;
+opacity:0.8;
+}
+
+/* ESTRUCTURA */
 
 .panel{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
+grid-template-columns:220px 1fr;
+gap:20px;
 padding:20px;
 }
 
+/* MENÚ LATERAL */
+
+.menu{
+background:#2f2f2f;
+color:white;
+padding:15px;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+gap:10px;
+font-size:14px;
+}
+
+/* CONTENIDO */
+
+.contenido{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+/* BOTONES */
+
 .boton{
-background:#C9C1B3;
-border-radius:14px;
-padding:25px;
-text-align:center;
-font-size:16px;
-font-weight:bold;
-box-shadow:0 4px 8px rgba(0,0,0,0.15);
+background:#d6d0c4;
+border-radius:10px;
+padding:22px;
+text-align:left;
+font-size:15px;
+font-weight:600;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+border:1px solid rgba(0,0,0,0.05);
+cursor:pointer;
 transition:0.15s;
 }
 
 .boton:active{
-transform:scale(0.97);
+transform:scale(0.96);
 }
 
 .incidencias{
@@ -46,7 +93,26 @@ color:black;
 }
 </style>
 
+</head>
+
+<body>
+
+<header>
+<div class="header-izq">GP PRO</div>
+<div class="header-der">Sistema de control</div>
+</header>
+
 <div class="panel">
+
+<div class="menu">
+<div>📦 Pedidos</div>
+<div>👤 Proveedores</div>
+<div>📊 Ventas</div>
+<div>📁 Histórico</div>
+<div>⚙️ Configuración</div>
+</div>
+
+<div class="contenido">
 
 <div class="boton">PROVEEDORES</div>
 <div class="boton">ARTÍCULOS</div>
@@ -64,3 +130,8 @@ color:black;
 <div class="boton">PAGOS</div>
 
 </div>
+
+</div>
+
+</body>
+</html>
